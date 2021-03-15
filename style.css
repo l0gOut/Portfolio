@@ -45,6 +45,7 @@ p {
 .a_header {
     color: #cdcdcd;
     height: 100%;
+    transition: all 200ms ease;
 }
 
 .a_header:hover {
@@ -170,6 +171,11 @@ p {
     border: 3px solid #e5e5e5;
     text-align: center;
     padding: 30px 40px;
+}
+
+.image_portfolio {
+    height: 200px;
+    width: 300px;
 }
 
 .image_text {
