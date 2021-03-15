@@ -208,6 +208,7 @@ p {
 
 .a_contacts:hover {
     color: darkred;
+    text-decoration: underline;
 }
 
 .div_footer {
