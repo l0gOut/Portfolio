@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+
+body {
+    font-family: 'Shippori Mincho B1', serif;
+    display: block;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.nav_tag {
+    background: #070707;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    height: 85px;
+    width: 100%;
+    z-index: 2;
+}
+
+.list_ul {
+    justify-content: flex-end;
+    list-style: none;
+    flex-flow: row;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.a_header {
+    color: #cdcdcd;
+    height: 100%;
+}
+
+.a_header:hover {
+    background-color: #cdcdcd;
+    color: #1a1a1a;
+}
+
+.li_items {
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 34px;
+    color: inherit;
+    height: 100%;
+}
+
+.div_home {
+    height: 1000px;
+    display: flex;
+    width: 100%;
+    background-image: url("images/bg.jpg");
+}
+
+.bg_text {
+    position: relative;
+    top: 60%;
+    left: 10%;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 10px #000000;
+    font-size: 54px;
+}
+
+.div_about_me {
+    background-color: #bfbfbf;
+    padding: 0;
+    margin: 0;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo_group {
+    height: 50%;
+    width: 700px;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.div_photo {
+    position: absolute;
+}
+
+#my_photo {
+    width: 230px;
+    height: 300px;
+    padding-left: 330px;
+    padding-top: 20%;
+}
+
+#back_my_photo {
+    width: 450px;
+    height: 300px;
+}
+
+.text_about_me {
+    height: 50%;
+    width: 700px;
+    display: flex;
+    font-size: 24px;
+    margin-left: 40px;
+    flex-flow: column;
+    justify-content: center;
+    color: #000000;
+    z-index: 1;
+}
+
+.h2_about_me {
+    font-size: 44px;
+    margin: 0;
+    line-height: 2;
+    padding-left: 30px;
+}
+
+.portfolio {
+    height: 1000px;
+    width: 100%;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2_and_images {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_h2 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.portfolio_image {
+    display: flex;
+}
+
+.image_group {
+    background-color: white;
+    border: 3px solid #e5e5e5;
+    text-align: center;
+    padding: 30px 40px;
+}
+
+.image_text {
+    font-size: 24px;
+}
+
+.contacts {
+    height: 600px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email_phone {
+    text-align: center;
+    line-height: 2;
+}
+
+.href_img {
+    margin: 30px;
+}
+
+.img_contact {
+    margin: 0 10px;
+    height: 64px;
+    width: 64px;
+}
+
+.a_contacts {
+    color: red;
+}
+
+.a_contacts:hover {
+    color: darkred;
+}
+
+.div_footer {
+    height: 125px;
+    background: #070707;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_footer_name {
+    font-size: 32px;
+}
+
+.p_footer_year,
+.p_footer_name {
+    font-family: 'Cormorant Unicase', serif;
+    color: white;
+    margin: 0;
+}
+
+.p_footer_year {
+    font-size: 18px;
+}
