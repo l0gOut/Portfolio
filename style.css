@@ -34,7 +34,6 @@ p {
 .list_ul {
     justify-content: flex-end;
     list-style: none;
-    flex-flow: row;
     display: flex;
     height: 100%;
     width: 100%;
@@ -117,6 +116,7 @@ p {
 .text_about_me {
     height: 50%;
     width: 700px;
+    min-width: 700px;
     display: flex;
     font-size: 24px;
     margin-left: 40px;
@@ -125,6 +125,7 @@ p {
     color: #000000;
     z-index: 1;
 }
+
 
 .h2_about_me {
     font-size: 44px;
@@ -158,6 +159,8 @@ p {
 
 .portfolio_image {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image_group {
@@ -180,12 +183,15 @@ p {
 }
 
 .email_phone {
+    min-width: 100%;
     text-align: center;
     line-height: 2;
 }
 
 .href_img {
     margin: 30px;
+    display: flex;
+    flex-flow: row;
 }
 
 .img_contact {
