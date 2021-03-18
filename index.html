@@ -8,13 +8,32 @@
 </head>
 <body>
     <nav class="nav_tag">
-        <ul class="list_ul" title="Навигация по сайту">
+        <ul class="list_ul" title="Навигация по сайту" id="ul_id">
             <a class="a_header" href="#Contacts" title="Contacts"><li class="li_items li3">CONTACTS</li></a>
             <a class="a_header" href="#Portfolio" title="Portfolio"><li class="li_items li2">PORTFOLIO</li></a>
             <a class="a_header" href="#About_me" title="About me"><li class="li_items li1">ABOUT ME</li></a>
             <a class="a_header" href="#Home" title="Home"><li class="li_items li4">HOME</li></a>
         </ul>
     </nav>
+    <div class="background_dialog" data-background></div>
+    <div class="div_portfolio_text" data-div-flashcards>
+        <div class="div_portfolio_h1">
+            <h1>Flashcards</h1>
+            <button data-button-exit>x</button>
+        </div>
+        <div class="div_portfolio_text_about">
+            <div>Данный проект предоставляет какие есть страны на нашей планете земля и какая у них столица, перейдя по ссылке <a href="https://github.com/l0gOut/Flashcards" target="_blank">"Flashcards"</a> вы перейдете на репозиторий GitHub, в котором будет находится проект!</div>
+        </div>
+    </div>
+    <div class="div_portfolio_text" data-div-virtual-piano>
+        <div class="div_portfolio_h1">
+            <div>Virtual Piano</div>
+            <button data-button-exit>x</button>
+        </div>
+        <div class="div_portfolio_text_about">
+            <div>Что то написано</div>
+        </div>
+    </div>
     <section about="Home" id="Home">
         <div class="div_home">
             <h1 class="bg_text">Daniil Petrunin,<br> Front-end developer</h1>
@@ -47,17 +66,15 @@
             <div class="h2_and_images">
             <h2 class="portfolio_h2">PORTFOLIO</h2>
                 <div class="portfolio_image">
-                    <div class="image_group">
-                        <a href="https://github.com/l0gOut/Flashcards" title="Переход к репозитрию с проектом" target="_blank">
-                            <img  src="images/project1.png" alt="Flashcards" class="image_portfolio">
-                            <p class="image_text">Flashcards</p>
-                        </a>
+                    <div class="image_group" id="flashcards">
+                        <img src="images/project1.png" alt="Flashcards" class="image_portfolio">
+                        <p class="image_text">Flashcards</p>
+                        <button id="flashcards_button">Подробнее</button>
                     </div>
-                    <div class="image_group">
-                        <a href="https://github.com/l0gOut/VirtualPiano" title="Переход к репозиторию с проектмо" target="_blank">
-                            <img src="images/project2.png" alt="Virtual Piano" class="image_portfolio">
-                            <p class="image_text">Virtual Piano</p>
-                            </a>
+                    <div class="image_group" id="virtual_piano">
+                        <img src="images/project2.png" alt="Virtual Piano" class="image_portfolio">
+                        <p class="image_text">Virtual Piano</p>
+                        <button id="piano_button">Подробнее</button>
                     </div>
                 </div>
             </div>

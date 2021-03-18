@@ -22,14 +22,98 @@ p {
     margin-bottom: 4px;
 }
 
+
+
+.background_dialog {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 400ms;
+}
+
+.div_portfolio_text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 0;
+    width: 0;
+    transform: translate(-50%, -50%);
+    border: 4px solid black;
+    border-radius: 40px;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: 400ms;
+}
+
+.div_portfolio_h1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    overflow: hidden;
+}
+
+.div_portfolio_h1 h1 {
+    margin-left: 60px;
+}
+
+.div_portfolio_h1 button {
+    margin-right: 20px;
+    width: 5%;
+    font-weight: bold;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.div_portfolio_text_about {
+    overflow: hidden;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.div_portfolio_text_about div {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.div_portfolio_text_about div a {
+    color: red;
+}
+
+.div_portfolio_text_about div a:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
 .nav_tag {
-    background: #070707;
+    background: rgba(7, 7, 7, 0.9);
     text-align: center;
     position: fixed;
     display: flex;
     height: 85px;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 .list_ul {
@@ -45,12 +129,12 @@ p {
 .a_header {
     color: #cdcdcd;
     height: 100%;
-    transition: all 200ms ease;
 }
 
 .a_header:hover {
     background-color: #cdcdcd;
     color: #1a1a1a;
+    transition: all 400ms ease;
 }
 
 .li_items {
@@ -144,7 +228,6 @@ span {
     z-index: 1;
 }
 
-
 .h2_about_me {
     font-size: 44px;
     letter-spacing: 10px;
@@ -191,6 +274,16 @@ span {
     padding: 30px 40px;
 }
 
+.image_group button {
+    background-color: black;
+    border: none;
+    color: #e5e5e5;
+    width: 60%;
+    height: 15%;
+    border-radius: 5px;
+    outline: none;
+}
+
 .image_portfolio {
     height: 200px;
     width: 300px;
@@ -198,6 +291,7 @@ span {
 
 .image_text {
     font-size: 24px;
+    letter-spacing: 4px; 
 }
 
 .contacts {
@@ -253,8 +347,19 @@ span {
     font-family: 'Cormorant Unicase', serif;
     color: white;
     margin: 0;
+    letter-spacing: 8px;
 }
 
 .p_footer_year {
     font-size: 18px;
+}
+
+.div_active {
+    pointer-events: initial;
+    opacity: 1;
+}
+
+.div_active[data-div-flashcards] {
+    height: 400px;
+    width: 700px;
 }
