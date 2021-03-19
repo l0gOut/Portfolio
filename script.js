@@ -4,6 +4,8 @@ const virtualPianoPopOut = document.querySelector("[data-div-virtual-piano]")
 const buttonFlashcard = document.getElementById("flashcards_button");
 const buttonPiano = document.getElementById("piano_button");
 const buttonExit = document.querySelectorAll("[data-button-exit]");
+const navTag = document.querySelector(".nav_tag");
+const navUl = document.querySelector(".list_ul");
 
 buttonFlashcard.addEventListener("click", () => {
     open(flashcardsPopOut);
@@ -22,6 +24,11 @@ buttonExit.forEach(value => {
 background.addEventListener("click", () => {
     close();
 });
+
+setTimeout(() =>{
+    navTag.classList.add("nav_tag_anim");
+    navUl.classList.add("nav_tag_anim");
+}, 500);
 
 function open(model) {
     background.classList.add("div_active");

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
 
-
 body {
     font-family: 'Shippori Mincho B1', serif;
     display: block;
@@ -80,6 +79,7 @@ p {
     background-color: inherit;
     border: none;
     outline: none;
+    cursor: pointer;
     font-size: 25px;
 }
 
@@ -283,6 +283,12 @@ span {
     height: 15%;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
+}
+
+.image_group button:active {
+	background-color: #323232;
+	transition: 200ms;
 }
 
 .image_portfolio {
@@ -319,6 +325,7 @@ span {
     margin: 0 10px;
     height: 64px;
     width: 64px;
+    cursor: pointer;
 }
 
 .a_contacts {
@@ -367,4 +374,18 @@ span {
 .div_active[data-div-virtual-piano] {
     height: 400px;
     width: 700px;
+}
+
+.nav_tag_anim {
+    transition: 500ms;
+}
+
+@media screen and (max-width: 1000px) {
+    .list_ul {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .nav_tag {
+
+    }
 }
