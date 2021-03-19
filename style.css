@@ -31,7 +31,7 @@ p {
     left: 50%;
     height: 100vh;
     width: 100vw;
-    z-index: 2;
+    z-index: 3;
     pointer-events: none;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -51,7 +51,7 @@ p {
     display: flex;
     flex-flow: column;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     opacity: 0;
     pointer-events: none;
     transition: 400ms;
@@ -70,6 +70,7 @@ p {
 
 .div_portfolio_h1 h1 {
     margin-left: 60px;
+    letter-spacing: 10px;
 }
 
 .div_portfolio_h1 button {
@@ -113,7 +114,7 @@ p {
     display: flex;
     height: 85px;
     width: 100%;
-    z-index: 5;
+    z-index: 2;
 }
 
 .list_ul {
@@ -359,7 +360,8 @@ span {
     opacity: 1;
 }
 
-.div_active[data-div-flashcards] {
+.div_active[data-div-flashcards],
+.div_active[data-div-virtual-piano] {
     height: 400px;
     width: 700px;
 }
