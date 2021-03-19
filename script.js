@@ -26,10 +26,13 @@ background.addEventListener("click", () => {
 function open(model) {
     background.classList.add("div_active");
     model.classList.add("div_active");
+    setTimeout(() => {
+        background.classList.add("time");
+    }, 200);
 }
 
 function close() {
-    background.classList.remove("div_active");
+    background.classList.remove("div_active", "time");
     flashcardsPopOut.classList.remove("div_active");
     virtualPianoPopOut.classList.remove("div_active")
 }

@@ -203,7 +203,7 @@ p {
 
 span {
     width: 800px;
-    height: 2px;
+    height: 3px;
     background-color: gray;
 }
 
@@ -216,7 +216,7 @@ span {
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
-    border: 2px solid gray;
+    border: 3px solid gray;
     height: 40%;
     width: 700px;
     min-width: 350px;
@@ -358,6 +358,9 @@ span {
 .div_active {
     pointer-events: initial;
     opacity: 1;
+}
+.time {
+    transition: none;
 }
 
 .div_active[data-div-flashcards],
