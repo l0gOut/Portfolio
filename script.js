@@ -6,6 +6,7 @@ const buttonPiano = document.getElementById("piano_button");
 const buttonExit = document.querySelectorAll("[data-button-exit]");
 const navTag = document.querySelector(".nav_tag");
 const navUl = document.querySelector(".list_ul");
+const divBurger = document.querySelector(".div_burger");
 
 buttonFlashcard.addEventListener("click", () => {
     open(flashcardsPopOut);
@@ -23,6 +24,10 @@ buttonExit.forEach(value => {
 
 background.addEventListener("click", () => {
     close();
+});
+
+divBurger.addEventListener("click", () => {
+    divBurger.style.backgroundColor = "red";
 });
 
 setTimeout(() =>{

@@ -121,6 +121,46 @@ p {
     z-index: 2;
 }
 
+.div_burger {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    transform: translate(-50%, -50%);
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0;
+    transition: 200ms;
+    pointer-events: none;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #cdcdcd;
+    text-align: initial;
+}
+
+.burger::before {
+    content: " ";
+    top: -10px;
+}
+
+.burger::after {
+    content: " ";
+    top: 10px;
+}
+
+#\#burger {
+    opacity: 0;
+    position: absolute;
+}
+
 .list_ul {
     justify-content: flex-end;
     list-style: none;
@@ -388,7 +428,8 @@ span {
         opacity: 0;
         pointer-events: none;
     }
-    .nav_tag {
-
+    .div_burger {
+        pointer-events: initial;
+        opacity: 1;
     }
 }
