@@ -6,7 +6,13 @@ const buttonPiano = document.getElementById("piano_button");
 const buttonExit = document.querySelectorAll("[data-button-exit]");
 const navTag = document.querySelector(".nav_tag");
 const navUl = document.querySelector(".list_ul");
-const divBurger = document.querySelector(".div_burger");
+const checkBox = document.getElementById("#burger");
+
+let intervalWidth = setInterval(checkWidth, 500);
+
+setTimeout(() => {
+    background.classList.remove("time");
+}, 100);
 
 buttonFlashcard.addEventListener("click", () => {
     open(flashcardsPopOut);
@@ -26,10 +32,6 @@ background.addEventListener("click", () => {
     close();
 });
 
-divBurger.addEventListener("click", () => {
-    divBurger.style.backgroundColor = "red";
-});
-
 setTimeout(() =>{
     navTag.classList.add("nav_tag_anim");
     navUl.classList.add("nav_tag_anim");
@@ -38,13 +40,17 @@ setTimeout(() =>{
 function open(model) {
     background.classList.add("div_active");
     model.classList.add("div_active");
-    setTimeout(() => {
-        background.classList.add("time");
-    }, 200);
 }
 
 function close() {
     background.classList.remove("div_active", "time");
     flashcardsPopOut.classList.remove("div_active");
     virtualPianoPopOut.classList.remove("div_active")
+}
+
+
+function checkWidth() {
+    if (innerWidth > 1000) {
+        checkBox.checked = false;
+    }
 }
