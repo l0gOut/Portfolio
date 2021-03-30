@@ -126,6 +126,7 @@ p {
 }
 
 .div_burger {
+    cursor: pointer;
     height: 40px;
     width: 40px;
     position: absolute;
@@ -176,6 +177,7 @@ p {
 
 #\#burger {
     opacity: 0;
+    pointer-events: none;
     position: fixed;
 }
 
